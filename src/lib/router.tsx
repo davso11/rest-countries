@@ -3,6 +3,7 @@ import { Shell } from '@/layouts/shell';
 
 // pages
 import { HomePage } from '@/pages/home';
+import { DetailsPage } from '@/pages/details';
 
 export const router = createBrowserRouter([
   {
@@ -12,6 +13,10 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />,
+      },
+      {
+        path: 'country/:code',
+        element: <DetailsPage />,
       },
     ],
   },
