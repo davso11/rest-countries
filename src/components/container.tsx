@@ -5,7 +5,7 @@ type ContainerProps = React.ComponentProps<'div'>;
 export const Container = ({ className, ...props }: ContainerProps) => {
   return (
     <div
-      className={cn('mx-auto max-w-7xl px-8', className)}
+      className={cn('xs:px-8 mx-auto max-w-7xl px-4', className)}
       {...props}
     />
   );
