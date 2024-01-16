@@ -16,7 +16,7 @@ export default {
       sans: ['Nunito Sans', ...defaultFontFamily.fontFamily.sans],
     },
     dropShadow: {
-      DEFAULT: '0px 5px 8px hsl(var(--shadow) / 20%)',
+      DEFAULT: '0px 3px 5px hsl(var(--shadow) / 10%)',
     },
     extend: {
       colors: {
@@ -25,6 +25,9 @@ export default {
         foreground: 'hsl(var(--foreground))',
         border: 'hsl(var(--border))',
         shadow: 'hsl(var(--shadow))',
+      },
+      gridTemplateColumns: {
+        fit: 'repeat(auto-fit, minmax(240px, 1fr))',
       },
     },
   },
