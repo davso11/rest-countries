@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* light mode */
+  --primary: 0, 0%, 100%;
+  --background: 0, 0%, 98%;
+  --foreground: 200, 15%, 8%;
+  --border: 0, 0%, 52%;
+  --shadow: var(--border);
+}
+
+.dark {
+  --primary: 209, 23%, 22%;
+  --background: 207, 26%, 17%;
+  --foreground: 0, 0%, 100%;
+  --border: 0, 0%, 52%;
+  --shadow: var(--border);
+}
+
+@layer base {
+  * {
+    @apply border-border box-border;
+  }
+
+  body {
+    @apply font-sans;
+  }
+}
