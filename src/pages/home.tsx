@@ -39,7 +39,7 @@ export const HomePage = () => {
 
       {/* country list */}
       {filteredCountries.length > 0 ? (
-        <div className="xs:px-12 mt-10 grid grid-cols-1 gap-16 sm:grid-cols-2 sm:px-0 md:grid-cols-3 lg:grid-cols-4">
+        <div className="xs:px-12 mt-10 grid grid-cols-1 items-start gap-16 sm:grid-cols-2 sm:px-0 md:grid-cols-3 lg:grid-cols-4">
           {filteredCountries.map((country) => (
             <CountryCard
               key={country.alpha3Code}
