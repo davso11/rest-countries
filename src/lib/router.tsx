@@ -7,7 +7,7 @@ import { DetailsPage } from '@/pages/details';
 
 export const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/rest-countries',
     element: <Shell />,
     children: [
       {
@@ -15,7 +15,7 @@ export const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: 'country/:code',
+        path: ':code',
         element: <DetailsPage />,
       },
     ],

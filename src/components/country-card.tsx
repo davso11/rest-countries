@@ -8,7 +8,7 @@ type CountryCardProps = React.ComponentProps<'article'> & {
 
 export const CountryCard = ({ country, ...props }: CountryCardProps) => {
   return (
-    <Link to={`/country/${country.alpha3Code.toLowerCase()}`}>
+    <Link to={`/rest-countries/${country.alpha3Code.toLowerCase()}`}>
       <article
         className={cn('overflow-hidden rounded-md drop-shadow')}
         {...props}

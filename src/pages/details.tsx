@@ -40,7 +40,7 @@ export const DetailsPage = () => {
     <>
       <button
         className="bg-primary flex items-center rounded-md px-8 py-1.5 drop-shadow"
-        onClick={() => navigate('/')}
+        onClick={() => navigate('/rest-countries')}
       >
         <MoveLeft
           size={16}
@@ -126,7 +126,7 @@ export const DetailsPage = () => {
 
                         return (
                           <Link
-                            to={`/country/${border.toLowerCase()}`}
+                            to={`/rest-countries/${border.toLowerCase()}`}
                             key={border}
                             className="bg-primary flex items-center rounded px-5 py-1 text-sm drop-shadow"
                           >
